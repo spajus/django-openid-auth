@@ -53,6 +53,7 @@ setup(
     long_description=long_description,
     license='BSD',
     platforms=['any'],
+    zip_safe=False,
     url='https://launchpad.net/django-openid-auth',
     download_url=('http://launchpad.net/django-openid-auth/trunk/%s/+download'
                   '/django-openid-auth-%s.tar.gz' % (VERSION, VERSION)),
