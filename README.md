@@ -5,19 +5,6 @@ This is a fork of the original django-openid-auth
 (https://code.launchpad.net/django-openid-auth). It is meant to resolve 
 issues like inefficient "openiduser123" usernames and other inflexibilities. 
 
-Using with zc.buildout
-======================
-
-Note that you cannot use the original django-openid-auth egg name because buldout
-will then use easy_install and get the original library.
-
-    [buildout]
-    develop = .
-    parts = python django
-    find-links = https://github.com/spajus/django-openid-auth/tarball/master#egg=django-openid-auth-spajus
-    eggs = yourapp
-           django-openid-auth-spajus
-
 Django OpenID Authentication Support
 ====================================
 
