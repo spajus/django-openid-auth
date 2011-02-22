@@ -31,6 +31,13 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns('django_openid_auth.views',
     url(r'^login/$', 'login_begin', name='openid-login'),
+    url(r'^google/$', 'login_begin', 
+        {'openid_url': 'https://www.google.com/accounts/o8/id'},
+        name='openid-login-google'),
+    url(r'^yahoo/$', 'login_begin', 
+        {'openid_url': 'http://yahoo.com'},
+        name='openid-login-yahoo'),
+    
     url(r'^complete/$', 'login_complete', name='openid-complete'),
     url(r'^logo.gif$', 'logo', name='openid-logo'),
 )
